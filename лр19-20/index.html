@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-20</title>
+</head>
+<body>
+    <form id="myForm" onsubmit="return submitForm(event)">
+        <div>
+            <label for="name">Как вас зовут?</label><br>
+            <input type="text" id="name" required><br>
+        </div>
+        <div>
+            <label for="email">Email адрес</label><br>
+            <input type="email" id="email" required><br>
+        </div>
+        <div>
+            <label for="question">Вопрос</label><br>
+            <textarea id="question" required></textarea><br>
+        </div>
+        <input type="submit" value="Отправить">
+    </form>
+
+    <script src="js.js"></script>
+</body>
+</html>

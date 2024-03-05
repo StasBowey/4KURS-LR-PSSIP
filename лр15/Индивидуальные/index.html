@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="def.css" rel="stylesheet" type="text/css">
+    <title>lr15</title>
+
+</head>
+<body>
+    <script src="main.js"></script>
+    
+    <p id="output">К сожалению, ты не нажал ни одной клавиши! Увы, друг :(</p>
+
+    <button onclick="alert(`asalai masalai`)">Клик ЛКМ</button>
+
+    <input type="text">
+
+    <div id="box" draggable="true"></div>
+
+    <span id="touchArea">Привет, Пупсик</span>
+
+   
+
+    <script>
+        
+        var box = document.getElementById("box");
+
+        box.addEventListener("dragstart", function(event) {
+            event.dataTransfer.setData("text/plain", "Ловко!");
+        });
+
+        box.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+
+        box.addEventListener("pointermove", function(event) {
+            console.log("X Y мыши: ", event.clientX, event.clientY);
+        });
+
+        const touchArea = document.querySelector('#touchArea');
+
+        touchArea.addEventListener('touchstart', function(event) {
+            console.log('Не трогай l_l');
+        }, { once: true});
+
+    </script>
+</body>
+</html>

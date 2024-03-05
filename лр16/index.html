@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>RegisterForm</title>
+</head>
+<body>
+    <div class="btn_reg">
+        <button class="openForm">Registration</button>
+    </div>
+    
+    <form action="" class="loginUp">
+        <div class="loginUp__row">
+            <div>
+                <span>Email</span>
+                <div class="typeElement"><input type="email" id="mail" placeholder="Input Email" required></div>
+                <div class="typeElement"><div id="error"></div></div>
+                <span>Password</span>
+                <div class="typeElement"><input type="password" id="password" placeholder="Input Password" required></div>
+                <div class="typeElement"> 
+                    <span>Choose ur character</span> 
+                    <select id="MySelect" required>
+                        <option value="" required></option>
+                        <option value="option1" required>Spider Man</option>
+                        <option value="option2" required>MiniPig</option>
+                        <option value="option3" required>BigPig</option>
+                        <option value="option4" required>Valera</option>
+                    </select>
+                </div>
+                
+                <div class="typeElement">
+                    <span>Choose ur rank</span>
+                    <input type="radio" id="contactChoice1" name="contact" value="Silver" required/>
+                    <label for="contactChoice1">Silver</label>
+
+                    <input type="radio" id="contactChoice2" name="contact" value="Gold Nova" required/>
+                    <label for="contactChoice2">Gold Nova</label>
+
+                    <input type="radio" id="contactChoice3" name="contact" value="AK" required/>
+                    <label for="contactChoice3">AK</label>
+                </div>
+
+                <div class="typeElement"> <span>Terms of agreement</span> <input type="checkbox" name="accept" id="sentCheckBox" required></div>
+                
+            </div>
+            <div>
+                <button class="sentReg">Register</button>
+            </div>
+        </div>
+    </form>
+
+    
+    <script src="js.js"></script>
+</body>
+</html>

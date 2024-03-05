@@ -1,0 +1,15 @@
+#box {
+    width: 400px;
+    height: 200px;
+    background-color: #ed1212;
+    border: 1px solid #000000;
+    cursor: move;
+}
+
+span{
+    display: inline-block;
+    margin: 150% auto 0;
+    background-color: #28ef61;
+    border-radius: 25px;
+    padding: 25px;
+}

@@ -1,0 +1,34 @@
+ @media (max-width: 1200px) {
+	.form {
+		width: 350px;
+	}
+	.form_title {
+		width: auto;
+		font-size: 10pt;
+	}
+	#kolb {
+		width: 450px;
+	}
+	.info {
+		width: 1200px;
+	}
+} 
+
+@media (max-width: 320px) {
+	.h1_title {
+		font-size: 10pt;
+	}
+
+	.container {
+		max-width: 320px;
+	}
+
+	.info {
+		width: 320px;
+	}
+
+	.product-item {
+		float: center;
+	}
+} 
+

@@ -1,0 +1,18 @@
+#actionForm {
+    display: flex;
+    justify-content: center;
+}
+
+#actionForm_row {
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#btn {
+    padding-left: 155px;
+}
+
+#wishes {
+    height: 50px;
+}

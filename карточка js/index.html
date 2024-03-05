@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="actionForm">
+        <div id="actionForm_row">
+            <p>Форма регистрации</p>
+            <span>Имя </span><input type="text" id="name" placeholder="Введите имя" required /> <br><br>
+            <span>E-mail </span><input type="email" id="email" placeholder="Введите почту" required /> <br> <br>   
+            <span>Пароль </span><input type="password" id="password" placeholder="Введите пароль" required /> <br> <br>   
+            <span>Повтор пароля </span><input type="password" id="repeatPassword" placeholder="Повторите пароль" required /> <br><br>
+
+            <span>Пол </span> <input type="radio" id="sexMan" value="Мужской"  name="contact" /> <label>Мужской</label>
+            <input type="radio" id="sexWoman" value="Женский" name="contact" /> <label>Женский</label><br><br>
+
+            <span>Увлечения</span> 
+                    <select id="MySelect">
+                        <option value=""></option>
+                        <option value="Компьютеры" required>Компьютеры</option>
+                        <option value="Спорт" required>Спорт</option>
+                        <option value="Игры" required>Игры</option>
+                        <option value="Животное" required>Животные</option>
+                        <option value="Автомобили" required>Автомобили</option>
+                        <option value="Клубы" required>Клубы</option>
+                        <option value="Музыка" required>Музыка</option>
+                    </select> <br><br>
+            
+            <span>Ваши пожелания</span>
+            <input type="text" id="wishes" /> <br><br>
+
+            <div id="btn">
+                 <button type="submit" id="btn_send">Отправить</button>
+                <button id="btn_clear">Очистить</button>
+            </div>        
+        </div>
+    </form>
+    <script src="js.js"></script>
+</body>
+</html>

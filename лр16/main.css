@@ -1,0 +1,34 @@
+.btn_reg{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.loginUp{
+    display: none;
+}
+
+.loginUp.active{
+    display: flex;
+    justify-content: center;
+}
+
+.loginUp__row{
+    background-color: rgba(235, 158, 75, 0.5);
+    border: 2px solid rgb(53, 45, 64);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.typeElement{
+    margin-bottom: 8px;
+}
+
+#error {
+    color: red;
+}
+
+.invalid {
+    border-color: red;
+}
